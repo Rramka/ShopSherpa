@@ -6,6 +6,16 @@ app/api/__init__.py
 app/api/health.py
 app/core/__init__.py
 app/core/config.py
+app/db/__init__.py
+app/db/base.py
+app/db/session.py
+app/db/models/__init__.py
+app/db/models/offer.py
+app/db/models/product.py
+app/db/models/query.py
+app/db/models/ranking.py
+app/db/models/review.py
+app/db/models/user.py
 shopsherpa.egg-info/PKG-INFO
 shopsherpa.egg-info/SOURCES.txt
 shopsherpa.egg-info/dependency_links.txt
