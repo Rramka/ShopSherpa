@@ -1,0 +1,6 @@
+Context: Building ShopSherpa MVP — an agentic AI product chooser for Headphones first. Tech: FastAPI, LangGraph, SQLAlchemy, Alembic, Celery, Redis, Postgres (+PGVector), Pydantic, Uvicorn.
+Policies: Amazon PA-API content (price/offer) must be refreshed ≤24h; affiliate disclosure near CTAs; graceful rate-limit handling.
+Non-Goals (MVP): No user auth beyond magic link preview. No multi-retailer yet.
+Style: Python 3.11+, type-hints, black/isort/ruff, Pydantic v2.
+Testing: pytest; aim ≥70% on core logic.
+Rule: Don’t modify files outside the scope listed. If missing, create them.
