@@ -1,0 +1,1 @@
+"""ShopSherpa FastAPI application package."""
