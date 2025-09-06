@@ -1,4 +1,4 @@
-.PHONY: help dev lint test fmt install clean
+.PHONY: help dev lint test fmt install clean worker
 
 help: ## Show this help message
 	@echo "Available commands:"
@@ -9,6 +9,9 @@ install: ## Install dependencies
 
 dev: ## Run development server
 	uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+worker: ## Start Celery worker
+	celery -A app.celery_app worker --loglevel=info --concurrency=4
 
 lint: ## Run linting
 	ruff check .
